@@ -9,5 +9,5 @@ echo 'setting up test environment'
 apimcli add-env -n test \
                     --apim https://localhost:9444 \
                     --token https://localhost:8244/token \
-echo 'logging into test'
-apimcli login test -u $USERNAME -p $PASSWORD -k
+#echo 'logging into test'
+#apimcli login test -u $USERNAME -p $PASSWORD -k

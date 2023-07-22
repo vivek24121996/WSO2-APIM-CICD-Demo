@@ -7,10 +7,8 @@ pipeline {
     stages {
         stage('Setup APIM Environments'){
             steps{
-#                withCredentials([usernamePassword(credentialsId: 'apim', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                     sh './config.sh'
-#                }
-            }
+         }
         }
         stage('Deploy to Production') {
             environment{

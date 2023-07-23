@@ -6,7 +6,7 @@ apictl version
 rm -rf $HOME/.wso2apictl
 
 echo 'setting up test environment'
-apictl add env -e prod \
+apictl add env prod \
                     --apim https://localhost:9444 \
                     --token https://localhost:8244/token \
 #echo 'logging into test'

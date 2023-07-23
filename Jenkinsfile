@@ -18,7 +18,7 @@ pipeline {
             }
             steps {
                 echo 'Deploying to Production'
-                sh 'apictl import-api -f $API -e $ENV -k --preserve-provider=false --update --verbose'
+                sh 'apictl import api -f $API -e $ENV -k --preserve-provider=false --update --verbose'
             }
         }
     }

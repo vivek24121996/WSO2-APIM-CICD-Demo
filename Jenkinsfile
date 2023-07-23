@@ -7,6 +7,7 @@ pipeline {
     stages {
         stage('Setup APIM Environments'){
             steps{
+                sh "chmod +x config.sh"
                     sh './config.sh'
          }
         }

@@ -17,7 +17,7 @@ pipeline {
                 RETRY = '60'
             }
             steps {
-                echo 'Deploying to Production'
+                echo 'Deploying to Production APIM Instance'
                 sh 'apictl import api -f $API -e $ENV -k --preserve-provider=false --update --verbose'
             }
         }
